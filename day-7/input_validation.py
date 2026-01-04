@@ -1,3 +1,9 @@
+# Day 7: Input validation and basic security
+# I focused on making sure the backend only accepts clean and valid data
+# The API checks for missing fields, invalid usernames, and weak passwords
+# Passwords are hashed before being saved to protect user information
+# This helps prevent errors, misuse, and security issues early on
+
 from flask import Flask,request,jsonify
 from create_db import get_db,init_db
 from werkzeug.security import generate_password_hash, check_password_hash
