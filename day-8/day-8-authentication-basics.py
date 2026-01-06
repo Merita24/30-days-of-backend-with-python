@@ -1,3 +1,10 @@
+# Day 8: Authentication
+# This code handles user registration and login.
+# Passwords are hashed before storing to keep them secure.
+# When users log in, their input is checked against the hashed password.
+# The database stores email and password information safely.
+# This is the foundation for building secure login systems in web apps.
+
 from flask import Flask,request,jsonify
 import sqlite3
 from create_db import get_db,init_db
