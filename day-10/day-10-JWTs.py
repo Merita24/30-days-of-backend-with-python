@@ -1,3 +1,9 @@
+# Day 10 focused on JWT authentication and role-based access control.
+# Users can register and login, receiving a JWT token upon successful login.
+# The token carries user information like user_id, email, role, and expiration.
+# A decorator verifies the token for protected routes to ensure authentication.
+# Another decorator checks the user's role to enforce authorization (e.g., admin-only routes).
+# This setup simulates real-world stateless API security using Flask and SQLite.
 from flask import Flask,request,jsonify
 import sqlite3
 import jwt
